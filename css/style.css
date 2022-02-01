@@ -1,4 +1,4 @@
-body{
+.background{
     height: 100vh;
     background-image: linear-gradient(to bottom, #009688 20%, #DBDBD3 20% 100%);
 };
