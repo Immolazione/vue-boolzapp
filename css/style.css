@@ -1,12 +1,11 @@
-.background{
+.height-90 {
+    height: 90%; 
+}
+
+body {
     height: 100vh;
     background-image: linear-gradient(to bottom, #009688 20%, #DBDBD3 20% 100%);
 };
-
-.height-90 {
-    height: 90%; /*NON FUNZIONA*/
-}
-
 /* #contacts {
     background-color: #fff; FUNZIONA IN MODO STRANO
 };
