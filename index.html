@@ -89,7 +89,7 @@
                     <!-- ENTER A TEXT SECTION -->
                     <section id="enter-text" class="w-100 grey g-0 row d-flex justify-content-center align-items-center">
                         <i class="far fa-smile fa-2x col-1 d-flex justify-content-center"></i>
-                        <input id="text-area" type="text" class="col-10 border-0 rounded" placeholder="Scrivi un messaggio">
+                        <input id="text-area" type="text" class="col-10 border-0 rounded" placeholder="Scrivi un messaggio" v-model="newMessage" v-on:keyup.enter="enterNewMessage(newMessage)">
                         <i class="fas fa-microphone fa-2x col-1 d-flex justify-content-center"></i>
                     </section>
                 </div>
