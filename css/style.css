@@ -57,6 +57,10 @@ body {
     overflow-y: scroll;
 }
 
+#contacts > div {
+    cursor: pointer;
+}
+
 #messages-container {
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
