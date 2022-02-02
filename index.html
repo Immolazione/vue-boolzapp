@@ -23,7 +23,10 @@
                 <div id="contacts-section" class="col-5 h-100 p-0 bg-black d-flex flex-column">
 
                     <!-- USER PROFILE -->
-                    <section id="user" class="grey"></section>
+                    <section id="user" class="grey g-0 p-2 row">
+                        <img class="contact-user-img rounded-circle col-2 me-1" :src="`img/avatar${user.avatar}.jpg`" :alt='`${user.name}`'>
+                        <div class="col-10 d-flex align-items-center"><strong>{{ user.name }}</strong></div>
+                    </section>
 
                     <!-- NOTIFIES -->
                     <section id="notifies" class="lightblue"></section>
