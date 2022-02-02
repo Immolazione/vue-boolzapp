@@ -7,8 +7,12 @@ body {
     height: 90%; 
 }
 
-.lightblue {
+.bg-lightblue {
     background-color: #8EDAFC;
+}
+
+.lightblue {
+    color: #8EDAFC;
 }
 
 .grey {
@@ -34,6 +38,11 @@ body {
 
 #notifies {
     height: 5rem;
+}
+
+.notify-icon {
+    height: 4rem;
+    width: 4rem;
 }
 
 #search-contacts {
