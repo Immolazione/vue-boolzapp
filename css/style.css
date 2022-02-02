@@ -57,6 +57,28 @@ body {
     overflow-y: scroll;
 }
 
+#messages-background {
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll
+}
+
+.message {
+    height: 4rem;
+    width: 12rem;
+}
+
+
+.message-received{
+    margin: 1rem 3rem 1rem 1rem;
+}
+
+.received {
+    background-color: #FFFFFF;
+}
+
+.sent {
+    background-color: #D5F9BA;
+}
 
 
 
