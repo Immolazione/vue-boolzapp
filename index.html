@@ -25,7 +25,7 @@
                     <!-- USER PROFILE -->
                     <section id="user" class="grey g-0 p-2 row">
                         <img class="contact-user-img rounded-circle col-2 me-1" :src="`img/avatar${user.avatar}.jpg`" :alt='`${user.name}`'>
-                        <div class="col-8 d-flex align-items-center"><strong>{{ user.name }}</strong></div>
+                        <div class="col-8 d-flex align-items-center fs-4">{{ user.name }}</div>
                         <div class="col-2 darkgrey d-flex justify-content-between align-items-center">
                             <i class="fas fa-circle-notch"></i>
                             <i class="fas fa-comment-alt"></i>
@@ -34,19 +34,19 @@
                     </section>
 
                     <!-- NOTIFIES -->
-                    <section id="notifies" class="bg-lightblue g-0 row p-2">
+                    <section id="notifies" class="bg-lightblue g-0 row p-2 d-flex align-items-center justify-content-center">
                         <div class="col-2 me-3 rounded-circle d-flex align-items-center justify-content-center notify-icon bg-white">
-                            <i class="fas fa-bell-slash fa-2x lightblue"></i>
+                            <i class="fas fa-bell-slash lightblue"></i>
                         </div>
-                        <div class="col-9 d-flex flex-column justify-content-center">
+                        <div class="col-9 d-flex flex-column">
                             <span>Ricevi notifiche di nuovi messaggi</span>
                             <small class="text-muted text-decoration-underline">Attiva notifiche desktop</small>
                         </div>
                     </section>
 
                     <!-- SEARCHBAR -->
-                    <section id="search-contacts" class="lightgrey d-flex justify-content-center align-items-center">
-                        <i class="fas fa-search darkgrey"></i>
+                    <section id="search-contacts" class="position-relative lightgrey d-flex justify-content-center align-items-center">
+                        <i class="position-absolute fas fa-search darkgrey"></i>
                         <input type="text" class="ps-5 border-0 rounded" placeholder="Cerca o crea nuova chat">
                     </section>
 
@@ -54,7 +54,7 @@
                     <section id="contacts" class="flex-grow-1 bg-white">
                         <div class="contact m-0 p-2 row border-bottom" v-for="contact in contacts">
                             <img class="contact-img rounded-circle col-3" :src="`img/avatar${contact.avatar}.jpg`" :alt='`${contact.name}`'>
-                            <div class="col-9 fs-4">{{ contact.name }}</div>
+                            <div class="col-9 fs-5">{{ contact.name }}</div>
                         </div>
                     </section>
                 </div>
