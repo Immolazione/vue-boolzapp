@@ -23,6 +23,11 @@ body {
     height: 4rem;
 }
 
+.contact-user-img {
+    height: 3rem;
+    width: 3rem;
+}
+
 #notifies {
     height: 5rem;
 }
