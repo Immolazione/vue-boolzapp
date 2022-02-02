@@ -25,7 +25,12 @@
                     <!-- USER PROFILE -->
                     <section id="user" class="grey g-0 p-2 row">
                         <img class="contact-user-img rounded-circle col-2 me-1" :src="`img/avatar${user.avatar}.jpg`" :alt='`${user.name}`'>
-                        <div class="col-10 d-flex align-items-center"><strong>{{ user.name }}</strong></div>
+                        <div class="col-8 d-flex align-items-center"><strong>{{ user.name }}</strong></div>
+                        <div class="col-2 darkgrey d-flex justify-content-between align-items-center">
+                            <i class="fas fa-circle-notch"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
                     </section>
 
                     <!-- NOTIFIES -->
@@ -33,7 +38,8 @@
 
                     <!-- SEARCHBAR -->
                     <section id="search-contacts" class="lightgrey d-flex justify-content-center align-items-center">
-                        <input type="text" class="border-0 rounded" placeholder="Cerca o crea nuova chat">
+                        <i class="fas fa-search darkgrey"></i>
+                        <input type="text" class="ps-5 border-0 rounded" placeholder="Cerca o crea nuova chat">
                     </section>
 
                     <!-- CONTACTS -->
