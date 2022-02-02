@@ -113,4 +113,9 @@ const app = new Vue ({
         },
         ],
     },
+    methods: {
+        setCurrentIndex(index){
+            this.currentIndex = index;
+        },
+    },
 });
