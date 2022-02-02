@@ -8,13 +8,19 @@ body {
 }
 
 
- #contacts {
-    background-color: #fff;
+.lightgrey {
+    background-color: #DCDBD2;
 }
 
-#chats {
+.grey {
     background-color: #EAEAEA;
 }
+
+#user {
+    height: 4rem;
+}
+
+
 
 
 
