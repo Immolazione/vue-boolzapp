@@ -29,7 +29,8 @@ const app = new Vue ({
         user: {
             name: 'Federico Bernardi',
             avatar: '_io'
-          },
+        },
+        currentIndex: 0,
         contacts: [
         {
             name: 'Michele',
