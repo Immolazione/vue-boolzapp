@@ -79,9 +79,10 @@
                     </section>
 
                     <!-- MESSAGES SECTION -->
-                    <section id="messages-container" class="flex-grow-1 py-2 d-flex flex-column row">
-                            <div class="message rounded-3" v-for="">
-
+                    <section id="messages-container" class="flex-grow-1 p-2 d-flex flex-column row">
+                            <div class="message rounded-3 m-2" v-for="message in contacts[0].messages" :class="message.status">
+                                <div>{{ message.text }}</div>
+                                <div class="text-muted text-end">{{ message.date }}</div>
                             </div>
                     </section>
 
