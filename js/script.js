@@ -20,7 +20,7 @@ const app = new Vue ({
     el: '#root',
     data:{
         user: {
-            name: 'Nome Utente',
+            name: 'Federico Bernardi',
             avatar: '_io'
           },
         contacts: [
