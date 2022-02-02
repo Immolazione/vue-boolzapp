@@ -19,6 +19,10 @@ body {
     background-color: #EAEAEA;
 }
 
+.darkgrey {
+    color: #B1B1B1;
+}
+
 #user {
     height: 4rem;
 }
