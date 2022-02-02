@@ -74,6 +74,8 @@ body {
 
 .sent {
     background-color: #D5F9BA;
+    position: relative;
+    left: 290px;
 }
 
 
