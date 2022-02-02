@@ -9,16 +9,26 @@
     <title>Boolzapp</title>
 </head>
 <body>
-    <!-- <div class="background"> -->
-        <div id="root" class="h-100 d-flex align-items-center justify-content-center">
-            <div class="container height-90">
-                <div class="h-100 d-flex"> <!--SE METTO LA CLASSE CSS NON LA PRENDE, H-100 DI BOOTSTRAP Sì-->
-                    <div id="contacts" class="col-4 h-100"></div>
-                    <div id="chats" class="col-8 h-100"></div>
+    <div id="root" class="h-100 d-flex align-items-center justify-content-center">
+
+        <!-- CONTAINER -->
+        <div class="container height-90">
+
+            <!-- ROW -->
+            <div class="h-100 row">
+
+                <!-- CONTACT SECTION -->
+                <div id="contacts" class="col-4 h-100 p-0 bg-black">
+                    <section id="user" class="grey h-15"></section>
+                </div>
+
+                <!-- CHAT SECTION -->
+                <div id="chats" class="col-8 h-100 p-0 bg-black">
+
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
