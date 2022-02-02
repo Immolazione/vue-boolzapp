@@ -52,7 +52,7 @@
 
                     <!-- CONTACTS -->
                     <section id="contacts" class="flex-grow-1 bg-white">
-                        <div class="contact m-0 p-2 row border-bottom" v-for="contact in contacts">
+                        <div class="contact m-0 py-2 row border-bottom" v-for="contact in contacts">
                             <img class="contact-img rounded-circle col-3" :src="`img/avatar${contact.avatar}.jpg`" :alt='`${contact.name}`'>
                             <div class="col-9 fs-5">{{ contact.name }}</div>
                         </div>
@@ -69,6 +69,8 @@
                             <span class="fs-5">Michele</span>
                             <small class="text-muted">Ultimo accesso oggi alle</small>
                         </div>
+
+                        <!-- ICONE RECEIVER -->
                         <div class="col-2 darkgrey d-flex justify-content-around align-items-center">
                             <i class="fas fa-search"></i>
                             <i class="fas fa-paperclip"></i>
@@ -77,16 +79,10 @@
                     </section>
 
                     <!-- MESSAGES SECTION -->
-                    <section id="messages-background" class="flex-grow-1">
-                        <div class="message-received">
-                            <div class="message received rounded-3"></div>
-                        </div>
+                    <section id="messages-container" class="flex-grow-1 py-2 d-flex flex-column row">
+                            <div class="message rounded-3" v-for="">
 
-                        <div class="d-flex flex-row-reverse me-3">
-                            <div class="message sent rounded-3">
-                                {{  }}
                             </div>
-                        </div>
                     </section>
 
                     <!-- ENTER A TEXT SECTION -->
