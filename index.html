@@ -52,7 +52,7 @@
 
                     <!-- CONTACTS -->
                     <section id="contacts" class="flex-grow-1 bg-white">
-                        <div class="contact m-0 py-2 row border-bottom" v-for="contact in contacts">
+                        <div class="contact m-0 py-2 row border-bottom" v-for="(contact, index) in contacts" @click="currentIndex = contacts[index]">
                             <img class="contact-img rounded-circle col-3" :src="`img/avatar${contact.avatar}.jpg`" :alt='`${contact.name}`'>
                             <div class="col-9 fs-5">{{ contact.name }}</div>
                         </div>
@@ -64,9 +64,9 @@
 
                     <!-- RECEIVER BAR -->
                     <section id="receiver" class="w-100 grey g-0 row d-flex justify-content-between align-items-center">
-                        <img class="contact-receiver-img rounded-circle col-2" :src="`img/avatar_1.jpg`">
+                        <img class="contact-receiver-img rounded-circle col-2" :src="`img/avatar${contacts[currentIndex].avatar}.jpg`">
                         <div class="col-8 d-flex flex-column">
-                            <span class="fs-5">Michele</span>
+                            <span class="fs-5">{{ contacts[currentIndex].name }}</span>
                             <small class="text-muted">Ultimo accesso oggi alle</small>
                         </div>
 
@@ -80,7 +80,7 @@
 
                     <!-- MESSAGES SECTION -->
                     <section id="messages-container" class="flex-grow-1 p-2 d-flex flex-column row">
-                            <div class="message rounded-3 m-2" v-for="message in contacts[0].messages" :class="message.status">
+                            <div class="message rounded-3 m-2 d-flex flex-column justify-content-between" v-for="message in contacts[currentIndex].messages" :class="message.status">
                                 <div>{{ message.text }}</div>
                                 <div class="text-muted text-end">{{ message.date }}</div>
                             </div>
