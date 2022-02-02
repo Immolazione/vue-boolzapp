@@ -7,17 +7,33 @@ body {
     height: 90%; 
 }
 
-
-.lightgrey {
-    background-color: #DCDBD2;
+.lightblue {
+    background-color: #8EDAFC;
 }
 
 .grey {
+    background-color: #DCDBD2;
+}
+
+.lightgrey {
     background-color: #EAEAEA;
 }
 
 #user {
     height: 4rem;
+}
+
+#notifies {
+    height: 5rem;
+}
+
+#search-contacts {
+    height: 2.5rem;
+}
+
+#search-contacts > input {
+    height: 1.5rem;
+    width: 85%;
 }
 
 
