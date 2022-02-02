@@ -36,6 +36,9 @@ body {
     width: 85%;
 }
 
+#contacts {
+    overflow-y: scroll;
+}
 
 
 
