@@ -41,8 +41,12 @@ body {
 }
 
 .notify-icon {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.fa-search{
+    left: 2.5rem;
 }
 
 #search-contacts {
