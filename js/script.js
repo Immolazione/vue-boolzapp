@@ -119,7 +119,9 @@ const app = new Vue ({
             this.currentIndex = index;
         },
         enterNewMessage() {
-            const newMessage = {
+            if (!this.newMessage) return;
+            
+            const textNewMessage = {
                 date: "",
                 text: this.newMessage,
                 status: "sent",
