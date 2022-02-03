@@ -53,22 +53,23 @@ body {
     width: 85%;
 }
 
-#contacts {
-    overflow-y: scroll;
-}
-
 #contacts > div {
     cursor: pointer;
 }
 
+#contacts {
+    /* overflow-y: scroll; */
+}
+
 #messages-container {
     background-image: url(../img/mine.jpg);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .message {
-    height: 6rem;
+    min-height: 2rem;
     width: 15rem;
+    overflow-x: visible;
 }
 
 
