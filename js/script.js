@@ -128,6 +128,9 @@ const app = new Vue ({
             }
             this.contacts[this.currentIndex].messages.push(newMessage);
             this.messageValue = "";
+
+            let myTimeout = setTimeout(alert('aaaa'), 4000);
         },
+
     },
 });
