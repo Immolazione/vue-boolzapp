@@ -121,7 +121,7 @@ const app = new Vue ({
         NewMessage() {
             if (!this.messageValue) return;
             
-            const newMessage = {
+            let newMessage = {
                 date: "",
                 text: this.messageValue,
                 status: "sent",
@@ -129,7 +129,16 @@ const app = new Vue ({
             this.contacts[this.currentIndex].messages.push(newMessage);
             this.messageValue = "";
 
-            let myTimeout = setTimeout(alert('aaaa'), 4000);
+
+
+            let myTimeout = setTimeout(() => {
+                newMessage = {
+                    date: "",
+                    text: 'Ok!',
+                    status: "received",
+                };
+                this.contacts[this.currentIndex].messages.push(newMessage);
+            }, 2000);
         },
 
     },
