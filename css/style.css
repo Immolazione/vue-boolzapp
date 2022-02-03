@@ -57,9 +57,9 @@ body {
     cursor: pointer;
 }
 
-#contacts {
-    /* overflow-y: scroll; */
-}
+/* #contacts {
+    /* overflow-y: scroll; 
+}*/
 
 #messages-container {
     background-image: url(../img/mine.jpg);
