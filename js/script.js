@@ -26,7 +26,7 @@ Visualizzazione ora e ultimo messaggio inviato/ricevuto nella lista dei contatti
 const app = new Vue ({
     el: '#root',
     data:{
-        newMessage: "",
+        textNewMessage: "",
         currentIndex: 0,
         user: {
             name: 'Federico Bernardi',
@@ -121,12 +121,12 @@ const app = new Vue ({
         enterNewMessage() {
             if (!this.newMessage) return;
             
-            const textNewMessage = {
+            const newMessage = {
                 date: "",
                 text: this.newMessage,
                 status: "sent",
             }
-            this.contacts[this.currentIndex].messages.push(textNewMessage);
+            this.contacts[this.currentIndex].messages.push(newMessage);
         },
     },
 });
