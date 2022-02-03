@@ -126,7 +126,7 @@ const app = new Vue ({
                 text: this.newMessage,
                 status: "sent",
             }
-            this.contacts[this.currentIndex].messages.push("newMessage");
+            this.contacts[this.currentIndex].messages.push(textNewMessage);
         },
     },
 });
