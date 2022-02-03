@@ -52,7 +52,7 @@
 
                     <!-- CONTACTS -->
                     <section id="contacts" class="flex-grow-1 bg-white">
-                        <div class="contact m-0 py-2 row border-bottom" v-for="(contact, index) in contacts" @click="setCurrentIndex(index)">
+                        <div class="contact m-0 py-2 row border-bottom" v-if="contact.visible === true" v-for="(contact, index) in contacts" @click="setCurrentIndex(index)">
                             <img class="contact-img rounded-circle col-3" :src="`img/avatar${contact.avatar}.jpg`" :alt='`${contact.name}`'>
                             <div class="col-9 fs-5">{{ contact.name }}</div>
                         </div>
