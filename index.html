@@ -47,7 +47,7 @@
                     <!-- SEARCHBAR -->
                     <section id="search-contacts" class="position-relative grey d-flex justify-content-center align-items-center">
                         <i class="position-absolute fas fa-search darkgrey"></i>
-                        <input type="text" class="ps-5 border-0 rounded" placeholder="Cerca o crea nuova chat">
+                        <input type="text" class="ps-5 border-0 rounded" placeholder="Cerca o crea nuova chat" v-model.trim="searchContact" @keyup="showContact">
                     </section>
 
                     <!-- CONTACTS -->
