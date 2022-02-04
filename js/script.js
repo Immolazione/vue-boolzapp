@@ -142,13 +142,13 @@ const app = new Vue ({
             }, 2000);
         },
         showContact() {
-            const search = this.searchContact.trim();
+            const search = this.searchContact;
 
             this.contacts.forEach(contact => {
-                if (this.contact.name.includes(searchContact)) {
-                    this.contact.visible === true;
+                if (contact.name.includes(search)) {
+                    contact.visible = true;
                 } else {
-                    this.contact.visible === false;
+                    contact.visible = false;
                 }
             });
         }
