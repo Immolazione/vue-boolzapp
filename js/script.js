@@ -27,6 +27,7 @@ const app = new Vue ({
     el: '#root',
     data:{
         messageValue: "",
+        searchContact:"",
         currentIndex: 0,
         user: {
             name: 'Federico Bernardi',
@@ -140,6 +141,17 @@ const app = new Vue ({
                 this.contacts[this.currentIndex].messages.push(newMessage);
             }, 2000);
         },
+        showContact() {
+            const search = this.searchContact.trim();
+
+            this.contacts.forEach(contact => {
+                if (this.contact.name.includes(searchContact)) {
+                    this.contact.visible === true;
+                } else {
+                    this.contact.visible === false;
+                }
+            });
+        }
 
     },
 });
