@@ -142,7 +142,7 @@ const app = new Vue ({
             }, 2000);
         },
         showContact() {
-            const search = this.searchContact;
+            const search = this.searchContact.toLowerCase();
 
             this.contacts.forEach(contact => {
                 if (contact.name.includes(search)) {
